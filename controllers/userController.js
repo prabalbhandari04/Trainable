@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 const client = new OAuth2(process.env.MAILING_SERVICE_CLIENT_ID)
 
 // client url from dot env
-const {CLIENT_URL} = process.env
+const {CLIENT_URL} = "https://trainable.vercel.app"
 
 
 // user controller
