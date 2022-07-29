@@ -11,6 +11,9 @@ const assessmentQuestionsSchema = new mongoose.Schema({
       type: String,
     enum : ['Text','Multiple Choice','Video','Audio'],
   },
+  mcqAnswer : {
+    type :Array,
+  },
   required : {
     type: Boolean,
     default: false
