@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 // Routes
 app.use('/user', require('./routes/userRouter'))
 app.use('/recruiter', require('./routes/recruiterRouter'))
-
+app.use('/assessment', require('./routes/assessmentRouter'))
 app.get("/", (req, res, next) => {
     res.send("Trainable backend running in staging environment!");
   });
