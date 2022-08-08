@@ -91,9 +91,12 @@ const assessmentCtrl = {
     addQuestion : async (req, res) => {
         try {
             const {id} = req.params
+            // const question = "test"
+            // const type = "Text"
+            // const required = true
             const {question, type, required} = req.body
             const assessment = await Assessment.findById(id)
-            assessment.assessmentQuestions.push({question, type, required})
+            assessment.assessmentQuestions.push({question , type , required})
             await assessment.save()
             res.json({msg: "Question added"})
         }
